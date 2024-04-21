@@ -1,6 +1,18 @@
 {
   "data": [
-    { "id": 1, "image": "images/field.jpg", "title": "푸른 들판" },
-    { "id": 2, "image": "images/field.jpg", "title": "푸른 들판" }
+    { "id": 1, "image": "/images/field.jpg", "title": "푸른 들판" },
+    { "id": 2, "image": "/images/seoulnignt.jpg", "title": "서울밤" },
+    { "id": 3, "image": "/images/독도.jpg", "title": "아름다운 독도" },
+    { "id": 4, "image": "/images/방장산.jpg", "title": "방장산" },
+    {
+      "id": 5,
+      "image": "/images/철원고석정꽃밭.jpg",
+      "title": "강원도 철원 고석정 꽃밭"
+    },
+    {
+      "id": 6,
+      "image": "/images/퍼시픽그로브.jpg",
+      "title": "캘리포니아 퍼시픽 그로브"
+    }
   ]
 }
