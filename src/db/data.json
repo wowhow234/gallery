@@ -1,18 +1,40 @@
 {
   "data": [
-    { "id": 1, "image": "/images/field.jpg", "title": "푸른 들판" },
-    { "id": 2, "image": "/images/seoulnignt.jpg", "title": "서울밤" },
-    { "id": 3, "image": "/images/독도.jpg", "title": "아름다운 독도" },
-    { "id": 4, "image": "/images/방장산.jpg", "title": "방장산" },
+    {
+      "id": 1,
+      "image": "/images/field.jpg",
+      "title": "푸른 들판",
+      "imgState": false
+    },
+    {
+      "id": 2,
+      "image": "/images/seoulnignt.jpg",
+      "title": "서울밤",
+      "imgState": false
+    },
+    {
+      "id": 3,
+      "image": "/images/독도.jpg",
+      "title": "아름다운 독도",
+      "imgState": false
+    },
+    {
+      "id": 4,
+      "image": "/images/방장산.jpg",
+      "title": "방장산",
+      "imgState": false
+    },
     {
       "id": 5,
       "image": "/images/철원고석정꽃밭.jpg",
-      "title": "강원도 철원 고석정 꽃밭"
+      "title": "강원도 철원 고석정 꽃밭",
+      "imgState": false
     },
     {
       "id": 6,
       "image": "/images/경복궁경회루.jpg",
-      "title": "경복궁경회루"
+      "title": "경복궁경회루",
+      "imgState": false
     }
   ]
 }
