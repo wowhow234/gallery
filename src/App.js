@@ -1,25 +1,27 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "../src/css/app.css";
 import dummy from "./db/data.json";
 import Modal from "./Modal";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [seeImage, setSeeImage] = useState();
 
   const handleopenModal = (id) => {
-    const dummydata = dummy.data[id - 1];
-    // if (id === dummydata.id) {
-    //   dummydata.imgState === true
-    //   setIsModalOpen(true);
-    //   console.log("id값 출력-----", id);
-    // } else console.log("----id 틀려용---", dummy.data[id - 1]);
-    // console.log("---if문 밖에서 id 출력---", id);
-    console.log("dummydata에서 id 추출", dummydata.id);
-    console.log("인자로 받은 id값 출력-----", id);
+    // 넘겨받은 id로 id가 일치하는지 확인
+    // dummy.data[id - 1]; // 더미데이터의 인덱스로 데이터 찾은거임 !!! json 객체 그 한줄 덩어리!!
     setIsModalOpen(true);
-    console.log("더미데이터배열목록", dummy.data);
-    console.log("isModalOpen?", isModalOpen);
+    console.log("인자로 받은 id(map의 item의 id임)----->", id); // map의 item의 id 이다. map의 index와 다르다 !!!
+
+    //  onsole.log("dummydata : ", dummydata.id); // 이미지 id
+
+    // console.log("더미데이터배열목록", dummy.data); // 결과 배열로 나옴
+    // console.log("---dummydata----", dummydata);
+    const findId = dummy.data.find((item) => item.id === id);
+    console.log("find함수결과----->", findId);
+    setSeeImage(findId);
   };
+
   const handlecloseModal = () => setIsModalOpen(false);
 
   return (
@@ -37,20 +39,13 @@ function App() {
               alt={"pic" + `${item.title}`}
               onClick={() => handleopenModal(item.id)}
             />
-
-            {isModalOpen && (
-              <Modal
-                // isOpen={isModalOpen}
-                closeModal={handlecloseModal}
-                data={item}
-              />
-            )}
           </div>
           <div className="picname">
             <span>{item.title}</span>
           </div>
         </div>
       ))}
+      {isModalOpen && <Modal closeModal={handlecloseModal} data={seeImage} />}
     </div>
   );
 }
