@@ -10,15 +10,15 @@
 }
 
 .modalcontent {
-  border: 1px solid black;
-  width: 900px;
-  height: 750px;
+  // border: 1px solid black;
+  // width: 900px;
+  // height: auto;
   margin: 0 auto;
   transform: translate(0, 10%);
+  text-align: center;
   img {
     width: auto;
     height: auto;
-    position: relative;
   }
   button {
     position: absolute;
@@ -26,6 +26,6 @@
     background-color: transparent;
     border: none;
     font-size: 30px;
-    color: white;
+    color: #8ac25d;
   }
 }

@@ -27,8 +27,8 @@ function App() {
   return (
     <div className="container">
       <div className="title">
-        <span>Great Scenery!</span>
-        <p>모달창으로 이미지 보기 연습</p>
+        <span>모달창으로 이미지 보기 연습</span>
+        <p>클릭하면 원본 이미지 띄우기</p>
         <div className="hr" />
       </div>
       {dummy.data.map((item, id) => (
